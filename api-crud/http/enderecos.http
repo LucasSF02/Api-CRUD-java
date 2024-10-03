@@ -1,0 +1,39 @@
+GET http://localhost:8080/api/enderecos
+
+###
+
+GET http://localhost:8080/api/enderecos/
+
+###
+
+POST http://localhost:8080/api/enderecos
+Content-Type: application/json
+
+{
+    "cep": "54333000",
+    "rua": "Afonso",
+    "numero": "10",
+    "bairro": "Bairro",
+    "cidade": "Tijuca",
+    "estado": "RJ",
+    "complemento": "Trabalho"
+}
+
+###
+
+PUT http://localhost:8080/api/enderecos/1
+Content-Type: application/json
+
+ {
+    "cep": "54887000",
+    "rua": "Jaime",
+    "numero": "58",
+    "bairro": "Bairro",
+    "cidade": "Jardim",
+    "estado": "RJ",
+    "complemento": "Casa"
+  }
+
+###
+
+DELETE http://localhost:8080/api/enderecos/3

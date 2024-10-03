@@ -1,0 +1,36 @@
+GET http://localhost:8080/api/clientes
+
+###
+
+GET http://localhost:8080/api/clientes/2
+
+###
+
+POST http://localhost:8080/api/clientes
+Content-Type: application/json
+
+{
+    "nome": "Vitor",
+    "email": "vitor@email.com",
+    "telefone": "24999740222",
+    "dataNascimento": "2000-08-14"
+}
+
+###
+
+PUT http://localhost:8080/api/clientes/3
+Content-Type: application/json
+
+ {
+    "nome": "Vitor",
+    "email": "vitor@email.com",
+    "telefone": "24999740222",
+    "dataNascimento": "2000-08-14",
+    "enderecos":[
+      {"id": 1}
+    ]
+  }
+
+###
+
+DELETE http://localhost:8080/api/clientes/1
